@@ -37,8 +37,7 @@ def job_desktop(cfg):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--modo", choices=["web","desktop"], required=True)
-    parser.add_argument("--programar", action="store_true",
-                        help="Ejecuta diariamente a la hora TIME del .env (mantiene el proceso en primer plano)")
+    parser.add_argument("--programar", action="store_true", help="Ejecuta diariamente a la hora TIME del .env (mantiene el proceso en primer plano)")
     args = parser.parse_args()
 
     cfg = cargar_env()
