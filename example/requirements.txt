@@ -1,0 +1,7 @@
+playwright
+pyautogui
+opencv-python
+pywinauto; platform_system == "Windows"
+python-dotenv
+loguru
+schedule
